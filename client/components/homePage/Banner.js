@@ -11,17 +11,16 @@ function Banner({ isMentorLoggedIn }) {
               {/* text box */}
               <div className="tw-mt-20 lg:tw-mt-12 tw-text-center lg:tw-text-left tw-font-sans tw-space-y-4">
                 <h1 className="tw-font-medium tw-text-4xl lg:tw-text-5xl !tw-leading-[60px] tw-font-[Poppins]">
-                  Grab your Intern with GrabTern
+                  Skill based Dating with Grind-er
                 </h1>
                 <p className="tw-text-lg">
-                  Book a meeting with a past intern to receive one-on-one
-                  mentoring and enhance your chances of landing your ideal
-                  intern.
+                  Book a meeting with a grinder on the basis of your skills and make beautiful connections with your true love.
+                  Pro Mode provides you to even video chat with your mate.
                 </p>
                 <div className="tw-w-full tw-flex tw-items-center tw-justify-center lg:tw-justify-start tw-gap-2">
                   <ButtonLink
-                    href="/mentorList"
-                    text="Find Mentor"
+                    href="/blogs"
+                    text="Want Dating Tips ?"
                     className="tw-min-w-[130px]"
                   />
                   {isMentorLoggedIn ? (
@@ -33,10 +32,10 @@ function Banner({ isMentorLoggedIn }) {
                     />
                   ) : (
                     <ButtonLink
-                      href="/mentorRegister"
-                      text="Be a Mentor"
+                      href="/auth/register"
+                      text="Sign Up"
                       variant="outline"
-                      className="tw-min-w-[130px]"
+                      className="tw-min-w-[100px]"
                     />
                   )}
                 </div>
@@ -67,7 +66,7 @@ function Banner({ isMentorLoggedIn }) {
             <div className="tw-hidden md:tw-block tw-absolute -tw-bottom-12 tw-left-8 tw-bg-base-100 tw-border tw-border-muted-200 tw-rounded-xl tw-p-5 tw-shadow-xl tw-shadow-muted-400/10">
               <div className="tw-flex tw-justify-between tw-mb-4">
                 <h3 className="tw-font-heading tw-font-medium tw-text-muted-800">
-                  Mentors
+                  Grinders
                 </h3>
                 <span className="tw-font-sans tw-text-sm tw-text-muted-400">
                   4 New

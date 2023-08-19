@@ -120,7 +120,7 @@ export default function Home() {
         </section>
 
         {/* internship section */}
-        <Section kicker="internships" heading="Our Featured Internships">
+        <Section kicker="features" heading="Why Join Us ?">
           <div>
             {carousel === true ? (
               <OwlCarousel
@@ -138,11 +138,7 @@ export default function Home() {
               </OwlCarousel>
             ) : null}
           </div>
-          <ButtonLink
-            text="View More Internships"
-            href="/internship"
-            className="tw-mx-auto tw-block tw-w-max tw-mt-10 hover:tw-text-white"
-          />
+
         </Section>
 
         <About />

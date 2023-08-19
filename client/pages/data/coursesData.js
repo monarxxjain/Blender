@@ -1,6 +1,6 @@
 export default [
   {
-    internshipImage: "/assets/img/gallery/gsoc.webp",
+    internshipImage: "/assets/img/gallery/image1.jpeg",
     internshipImageAlt: "Skill based Dating",
     internshipCategories: "Grinder",
     internshipTitle: "Skill based Dating",
@@ -13,7 +13,7 @@ export default [
     tags: ["Part Time", "Web"],
   },
   {
-    internshipImage: "/assets/img/gallery/mlhprep.webp",
+    internshipImage: "/assets/img/gallery/image2.jpeg",
     internshipImageAlt: "Live Connect Through Video Call",
     internshipCategories: "Grinder",
     internshipTitle: "Live Connect Through Video Call",
@@ -26,7 +26,7 @@ export default [
     tags: ["Part Time", "Major League Hacking"],
   },
   {
-    internshipImage: "/assets/img/gallery/mlhfellowship.webp",
+    internshipImage: "/assets/img/gallery/image3.jpeg",
     internshipImageAlt: "Helps in Upskilling with motivation",
     internshipCategories: "Grinder",
     internshipTitle: "Helps in Upskilling with motivation",
@@ -39,10 +39,10 @@ export default [
     tags: ["Part Time", "Major League Hacking", "MLH"],
   },
   {
-    internshipImage: "/assets/img/gallery/adobeshe.webp",
-    internshipImageAlt: "Adobe SHE - Student to Hero Empowerment",
+    internshipImage: "/assets/img/gallery/image4.jpeg",
+    internshipImageAlt: "Ask Questions and get Connected",
     internshipCategories: "Grinder",
-    internshipTitle: "Adobe SHE - Student to Hero Empowerment",
+    internshipTitle: "Ask Questions and get Connected",
     internshipDescription:
       "Adobe SHE as a resource for female and non-binary students interested in technology and provide guidance on how to apply and what to expect if accepted. The program can provide great opportunities for networking, mentorship, and scholarships.",
     internshipRating: 4.5,

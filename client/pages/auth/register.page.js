@@ -101,6 +101,12 @@ function Register() {
     email: "",
     password: "",
     confirmPassword: "",
+    age: "",
+    sex:"",
+    gender: "",
+    language: "",
+    description: "",
+    profession: ""
   });
   const [isValidValues, setIsValidValues] = useState(false);
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
@@ -121,7 +127,7 @@ function Register() {
   };
 
   useEffect(() => {
-    if (data.fullName && data.email && data.password && data.confirmPassword) {
+    if (data.fullName && data.email && data.password && data.confirmPassword && data.age && data.sex && data.gender && data.language &&  data.description && data.profession) {
       setIsValidValues(true);
     } else {
       setIsValidValues(false);
@@ -130,6 +136,7 @@ function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(data)
 
     if (data.password !== data.confirmPassword) {
       return toast.error("Passwords do not match!");
@@ -244,6 +251,86 @@ function Register() {
               >
                 {isConPasswordVisible ? <Visibillity /> : <VisibillityOff />}
               </div>
+            </div>
+          </div>
+
+          <div className={styles.forminput}>
+            <label htmlFor="age">Age</label>
+            <div className={styles.Input}>
+              <input
+                type="number"
+                name="age"
+                required
+                placeholder="Age"
+                onChange={handleChange}
+                value={data.age}
+              />
+            </div>
+          </div>
+
+          <div className={styles.forminput}>
+            <label htmlFor="sex">Sex</label>
+            <div className={styles.Input}>
+              <input
+                type="text"
+                name="sex"
+                required
+                placeholder="Male/Female"
+                onChange={handleChange}
+                value={data.sex}
+              />
+            </div>
+          </div>
+          <div className={styles.forminput}>
+            <label htmlFor="gender">Gender</label>
+            <div className={styles.Input}>
+              <input
+                type="text"
+                name="gender"
+                required
+                placeholder="What's Yours ?"
+                onChange={handleChange}
+                value={data.gender}
+              />
+            </div>
+          </div>
+          <div className={styles.forminput}>
+            <label htmlFor="language">Programming Language</label>
+            <div className={styles.Input}>
+              <input
+                type="text"
+                name="language"
+                required
+                placeholder="Prog. lang. you are proficient in"
+                onChange={handleChange}
+                value={data.language}
+              />
+            </div>
+          </div>
+          <div className={styles.forminput}>
+            <label htmlFor="description">Description</label>
+            <div className={styles.Input}>
+              <input
+                type="text"
+                name="description"
+                required
+                placeholder="Brief Description about You"
+                onChange={handleChange}
+                value={data.description}
+              />
+            </div>
+          </div>
+          <div className={styles.forminput}>
+            <label htmlFor="profession">Profession</label>
+            <div className={styles.Input}>
+              <input
+                type="text"
+                name="profession"
+                required
+                placeholder="Ex. Student"
+                onChange={handleChange}
+                value={data.profession}
+              />
             </div>
           </div>
           <ToastContainer />

@@ -30,14 +30,16 @@ function About() {
       </div>
       {/* left column */}
       <div>
-        <video
+        {/* <video
           controls="controls"
           className="video"
           muted
           style={{ width: "100%", maxWidth: "100%", height: "auto" }}
         >
           <source src="/video.mp4" type="video/mp4" />
-        </video>
+        </video> */}
+          <iframe width={"100%"} controls="controls" height={"400px"} src="https://www.youtube.com/embed/1m6en0SQNFs" title="George Michael - Careless Whisper (Lyric Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
       </div>
     </Section>
   );

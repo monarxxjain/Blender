@@ -80,7 +80,8 @@ function Header() {
             width={85}
             height={85}
             className="tw-ml-2 tw-cursor-pointer tw-object-contain"
-          />
+          /> 
+          <div className="tw-text-xl tw-font-medium">Grinder</div>
         </Link>
 
         {/* <div className="tw-flex tw-justify-center tw-items-center tw-ml-2">
